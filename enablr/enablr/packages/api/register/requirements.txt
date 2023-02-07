@@ -1,0 +1,3 @@
+aws-lambda-powertools[tracer,parser]
+pyjwt
+cryptography
