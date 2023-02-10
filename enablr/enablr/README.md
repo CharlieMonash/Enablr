@@ -109,7 +109,7 @@ In order to run the frontend locally you need to have the solution fully deploye
 
 Then from the `packages/frontend` directory run `yarn dev`
 
-### Mobile APP!!!
+### Mobile APP - hello
 
 Within the `packages/app` directory there is a flutter app, used in the app workflow to check off tasks.
 
