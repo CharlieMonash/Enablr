@@ -256,10 +256,10 @@ export const Stats: React.FC<{
                             type: "bar",
                             data: reminder
                               ? groupReminderByDay(reminder).map((rem) => ({
-                                  x: rem.due,
-                                  y: rem.reminders.filter((r) => r.completed)
-                                    .length,
-                                }))
+                                x: rem.due,
+                                y: rem.reminders.filter((r) => r.completed)
+                                  .length,
+                              }))
                               : [],
                           },
                           {
@@ -267,9 +267,9 @@ export const Stats: React.FC<{
                             type: "line",
                             data: reminder
                               ? groupReminderByDay(reminder).map((rem) => ({
-                                  x: rem.due,
-                                  y: rem.reminders.length,
-                                }))
+                                x: rem.due,
+                                y: rem.reminders.length,
+                              }))
                               : [],
                           },
                         ]}

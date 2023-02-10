@@ -6,12 +6,22 @@ import datetime
 import random
 from pytz import timezone, utc
 
+# Charlie
+INDIVIDUAL_TABLE_NAME="Dev-API-IndividualsTable05A6AA06-17X3FRB7GOSSK"
+REMINDER_TABLE_NAME="Dev-API-ReminderTable76285657-1KPMB5SW8DFNE"
+INDIVIDUAL_ID="990eb7fc-5b57-4a11-aa20-a97c45e196e5"
 
 dynamodb_resource = boto3.resource('dynamodb')
 dynamodb_client = boto3.client('dynamodb')
-individual_table = dynamodb_resource.Table(os.environ['INDIVIDUAL_TABLE_NAME'])
-reminder_table = dynamodb_resource.Table(os.environ['REMINDER_TABLE_NAME'])
-individual_id = os.environ['INDIVIDUAL_ID']
+individual_table = dynamodb_resource.Table(INDIVIDUAL_TABLE_NAME)
+reminder_table = dynamodb_resource.Table(REMINDER_TABLE_NAME)
+individual_id = INDIVIDUAL_ID
+
+#dynamodb_resource = boto3.resource('dynamodb')
+#dynamodb_client = boto3.client('dynamodb')
+#individual_table = dynamodb_resource.Table(os.environ['INDIVIDUAL_TABLE_NAME'])
+#reminder_table = dynamodb_resource.Table(os.environ['REMINDER_TABLE_NAME'])
+#individual_id = os.environ['INDIVIDUAL_ID']
 
 
 def delete_remaining_tasks(individual_id, task_id):

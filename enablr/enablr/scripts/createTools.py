@@ -4,12 +4,27 @@ import os
 import uuid
 import random
 
-user_pool_id = os.environ['USER_POOL_ID']
+SUPPORTER_TABLE_NAME="Dev-API-SupporterTable450A3E4A-7DU503G04XFI"
+INDIVIDUAL_TABLE_NAME="Dev-API-IndividualsTable05A6AA06-17X3FRB7GOSSK"
+TASK_TABLE_NAME="Dev-API-TaskTable22070546-1L0KUWL7ZI3OC"
+ACCESS_TABLE_NAME="Dev-API-AccessTable13A21DD9-EOMZOM4AHXPA"
+USER_POOL_ID="us-east-1_X4Mw37FJJ"
+
+#Charlie Changed:
+user_pool_id = USER_POOL_ID
 dynamodb_resource = boto3.resource('dynamodb')
-supporter_table = dynamodb_resource.Table(os.environ['SUPPORTER_TABLE_NAME'])
-individual_table = dynamodb_resource.Table(os.environ['INDIVIDUAL_TABLE_NAME'])
-task_table = dynamodb_resource.Table(os.environ['TASK_TABLE_NAME'])
-access_table = dynamodb_resource.Table(os.environ['ACCESS_TABLE_NAME'])
+supporter_table = dynamodb_resource.Table(SUPPORTER_TABLE_NAME)
+individual_table = dynamodb_resource.Table(INDIVIDUAL_TABLE_NAME)
+task_table = dynamodb_resource.Table(TASK_TABLE_NAME)
+access_table = dynamodb_resource.Table(ACCESS_TABLE_NAME)
+
+#user_pool_id = os.environ['USER_POOL_ID']
+#dynamodb_resource = boto3.resource('dynamodb')
+#supporter_table = dynamodb_resource.Table(os.environ['SUPPORTER_TABLE_NAME'])
+#individual_table = dynamodb_resource.Table(os.environ['INDIVIDUAL_TABLE_NAME'])
+#task_table = dynamodb_resource.Table(os.environ['TASK_TABLE_NAME'])
+#access_table = dynamodb_resource.Table(os.environ['ACCESS_TABLE_NAME'])
+
 
 cognito_client = boto3.client('cognito-idp')
 

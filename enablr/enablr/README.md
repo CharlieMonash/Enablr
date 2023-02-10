@@ -8,8 +8,8 @@ For technical decisions, detailed architecture and cost modelling: refer to the 
 
 Ensure you have the following installed globally:
 
-- [node > 14](https://nodejs.org/en/download/package-manager/) (or use [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) to install)
-- [yarn](https://classic.yarnpkg.com/lang/en/docs/install)
+- [node > 14](https://nodejs.org/en/download/package-manager/) (or use [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) to install) C(y)
+- [yarn](https://classic.yarnpkg.cdockom/lang/en/docs/install)
 - [Python >= 3.7](https://www.python.org/downloads/)
 - [AWS cli](https://aws.amazon.com/cli/)
 - [CDK cli](https://docs.aws.amazon.com/cdk/v2/guide/cli.html)
@@ -60,11 +60,11 @@ There has been some portion of a value provided, replace the entire string from 
 Before running this you will need to install `boto3` for python using `pip install boto3`
 
 ```
-SUPPORTER_TABLE_NAME="Dev-API-SupporterTable450A3E<REPLACE WITH YOUR TABLE NAME>" \
-INDIVIDUAL_TABLE_NAME="Dev-API-IndividualsTable05A6<REPLACE WITH YOUR TABLE NAME>" \
-TASK_TABLE_NAME="Dev-API-TaskTable22070<REPLACE WITH YOUR TABLE NAME>" \
-ACCESS_TABLE_NAME="Dev-API-AccessTable13A<REPLACE WITH YOUR TABLE NAME>" \
-USER_POOL_ID="ap-southeast-2_Iw<REPLACE WITH YOUR USER POOL ID>" \
+SUPPORTER_TABLE_NAME="Dev-API-SupporterTable450A3E4A-7DU503G04XFI" \
+INDIVIDUAL_TABLE_NAME="Dev-API-IndividualsTable05A6AA06-17X3FRB7GOSSK" \
+TASK_TABLE_NAME="Dev-API-TaskTable22070546-1L0KUWL7ZI3OC" \
+ACCESS_TABLE_NAME="Dev-API-AccessTable13A21DD9-EOMZOM4AHXPA" \
+USER_POOL_ID="us-east-1_X4Mw37FJJ" \
 python3 populate-all-data.py
 ```
 

@@ -63,9 +63,9 @@ task3 = create_task({
     ]})
 
 supporter1 = create_supporter({
-    'email': '<your email here>',
-    'first_name': 'Ron',
-    'last_name': "Swanston"
+    'email': 'charliedixon49@gmail.com',
+    'first_name': 'Charlie',
+    'last_name': "Dixon"
 })
 
 # If you already have a user you'd just like to reuse from cognito. Paste their sub here and skip the create supporter step.
@@ -92,9 +92,9 @@ child2 = create_child({
 link_child_to_supporter(supporter1, child2)
 
 supporter2 = create_supporter({
-    'email': '<your other email here>',
-    'first_name': 'Bob',
-    'last_name': "Burgers"
+    'email': 'teeganslo@gmail.com',
+    'first_name': 'Teegan',
+    'last_name': "Slomoi"
 })
 
 print('Ran successfully')
