@@ -1,6 +1,6 @@
 from createTools import create_task, create_supporter, create_child, link_child_to_supporter
 
-supporter = "9fc42f1d-9a84-4226-9eb1-1dd538c57d31"
+supporter = "4948d717-8277-4683-b2eb-cf3de82fcfef"
 
 # If you already have a user you'd just like to reuse from cognito. Paste their sub here and skip the create supporter step.
 # supporter = "495fd2d3-b82e-4f86-bb6e-145ea46f58d4"
@@ -69,7 +69,7 @@ task3 = create_task({
 
 # Note this child won't have tasks so they will need to be manually added in the dashboard
 child = create_child({
-    'first_name': 'Harry',
+    'first_name': 'Max',
     'last_name': "Potter",
     'birthday': "1999-05-09",
     'timezone': "Australia/Melbourne",

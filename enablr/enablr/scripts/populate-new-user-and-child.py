@@ -1,9 +1,9 @@
 from createTools import create_supporter, create_child, link_child_to_supporter
 
 supporter = create_supporter({
-    'email': '<your email here>',
-    'first_name': 'Ron',
-    'last_name': "Swanston"
+    'email': 'cdix0004@student.monash.edu',
+    'first_name': 'Charlie',
+    'last_name': "Monash"
 })
 
 # If you already have a user you'd just like to reuse from cognito. Paste their sub here and skip the create supporter step.
