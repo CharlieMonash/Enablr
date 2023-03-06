@@ -119,6 +119,7 @@ It's suggested that you follow the [flutter install steps](https://docs.flutter.
 
 When that's finished, open the flutter app directory within your chosen IDE (Tested with visual studio code)
 Within the file `packages/app/enablr_flutter_application/lib/consts.dart` you will need to edit the API URL to be the one that the frontend uses. It looks something like `https://efwetgaas.execute-api.ap-southeast-2.amazonaws.com`
+###Charlie - where to get this API from?
 
 and run in debug mode (f5 on most IDE's).
 

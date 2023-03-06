@@ -9,7 +9,7 @@ from pytz import timezone, utc
 # Charlie
 INDIVIDUAL_TABLE_NAME="Dev-API-IndividualsTable05A6AA06-17X3FRB7GOSSK"
 REMINDER_TABLE_NAME="Dev-API-ReminderTable76285657-1KPMB5SW8DFNE"
-INDIVIDUAL_ID="990eb7fc-5b57-4a11-aa20-a97c45e196e5"
+INDIVIDUAL_ID="9d65005c-5872-4a9f-9776-171f915848f1"
 
 dynamodb_resource = boto3.resource('dynamodb')
 dynamodb_client = boto3.client('dynamodb')

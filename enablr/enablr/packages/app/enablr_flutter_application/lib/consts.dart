@@ -1,1 +1,1 @@
-String apiURL = 'https://<your-api-from-api-gw>.ap-southeast-2.amazonaws.com';
+String apiURL = 'https://efwetgaas.execute-api.ap-southeast-2.amazonaws.com/';
